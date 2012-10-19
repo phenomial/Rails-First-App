@@ -9,7 +9,7 @@
       -#
       %th{:class=>('release_date' == @sortby)?'hilite':""}=link_to "Release Date",{:sort=>"release_date"},  |
       {:id=>"release_date_header"}  |
-      -#
+      -#helper
       %th More Info
   %tbody
     - @movies.each do |movie|
